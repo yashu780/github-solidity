@@ -6,8 +6,52 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "executewhileloop",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "myMap",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "remove",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -15,53 +59,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_i",
 						"type": "uint256"
 					}
 				],
-				"name": "forloopresult",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getforloopresult",
-				"outputs": [
-					{
-						"internalType": "uint256[]",
-						"name": "",
-						"type": "uint256[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "loop",
+				"name": "set",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "whileloopcounter",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -78,7 +88,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"if/loop.sol": "Loop"
+			"mapping.sol": "Mapping"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -92,12 +102,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"if/loop.sol": {
-			"keccak256": "0xcf8da599d0fa8b7de8ee2d7e402110c54bf127de05bf4b6e0b391782c6c4f0e8",
+		"mapping.sol": {
+			"keccak256": "0xe811ac8a6dda97965a66129437d0914b1d84bac4397d20218081aa9be170a80c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fff26444c5ac0d3e79115b131dc830a8e72d78ab21c285280389da23463c4046",
-				"dweb:/ipfs/QmSYsyeXEZ9n28NY6TSVrzaVtfn8VtSXQFHL18VDVWabEd"
+				"bzz-raw://873c08aeecf6b0ca9dee287bdfc290f5220197d9f99dd902a43b9daf7abc0de6",
+				"dweb:/ipfs/Qmc6iCEZskw6yoRuWs9H9TDWWrUR1n75oRvqbxyt7im4gV"
 			]
 		}
 	},

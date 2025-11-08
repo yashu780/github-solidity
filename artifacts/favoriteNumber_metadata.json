@@ -6,62 +6,54 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "executewhileloop",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "FavouriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getfavouriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_number",
 						"type": "uint256"
 					}
 				],
-				"name": "forloopresult",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getforloopresult",
-				"outputs": [
-					{
-						"internalType": "uint256[]",
-						"name": "",
-						"type": "uint256[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "loop",
+				"name": "setfavoritenumber",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "whileloopcounter",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -78,7 +70,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"if/loop.sol": "Loop"
+			"practise2.sol": "favoriteNumber"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -92,12 +84,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"if/loop.sol": {
-			"keccak256": "0xcf8da599d0fa8b7de8ee2d7e402110c54bf127de05bf4b6e0b391782c6c4f0e8",
+		"practise2.sol": {
+			"keccak256": "0x0f6ffb3eb5d2e763f2384f7c2ff61bd47113301046b8b473e1403f1c2aaa7572",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fff26444c5ac0d3e79115b131dc830a8e72d78ab21c285280389da23463c4046",
-				"dweb:/ipfs/QmSYsyeXEZ9n28NY6TSVrzaVtfn8VtSXQFHL18VDVWabEd"
+				"bzz-raw://fcc501be1460c0a342578e9b0028549defe5dc3b2c19b5d26fc4b4f04a24fec1",
+				"dweb:/ipfs/QmYRQUMpYDA1YJDQUU5XELwVRyJGM9WnV6WtMQdNHSf13f"
 			]
 		}
 	},
