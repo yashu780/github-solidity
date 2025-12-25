@@ -1,0 +1,28 @@
+step1 identify licence 
+why-:Max adoption	MIT
+Force open source	GPL-3.0
+Protect business logic	BUSL-1.1
+ private	UNLICENSED
+ it defines that your code can be reused or not 
+ //SPDX-License-Identifier: MIT
+ STEP2 DECLARATION OF SOLIDITY VERSION 
+ ^0.8.0  means:
+>= 0.8.0  and  < 0.9.0
+pragma=> code will be run only during runtime not on compile time 
+helps to avoid error during run time 
+
+state variable stores on blockchain like uint x=12;
+local variable only stores during function execution like function addnumber{
+    int a=12;
+    int b=11;
+}
+global variable are prdefine that are same for all like block.number{tell your block number }
+view function take value from block chain like uint num=x;
+function{
+    12+num;//we have to use view in syntax
+}
+pure function don't take data from block chain like function{
+    a+b;//no data outside function is added so we have to use pure in syntax
+
+}
+external keyword is use data outside the chain
