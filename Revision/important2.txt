@@ -1,0 +1,3 @@
+Require → User mistake// basic to store gas if error happens return left gas
+Revert → Logic decision//always use in if/else conditions
+Assert → Developer mistake//never be false if it's false it mean serious errror
