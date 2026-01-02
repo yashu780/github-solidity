@@ -7,25 +7,31 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "get",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "anyoneCanCall",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "num",
+				"name": "onlyOwnerCanCall",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -34,12 +40,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_newowner",
+						"type": "address"
 					}
 				],
-				"name": "set",
+				"name": "setowner",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -58,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"read&writestatevariable.sol": "SimpleStorage"
+			"ownable/ownable.sol": "ownable"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -72,12 +78,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"read&writestatevariable.sol": {
-			"keccak256": "0x6b8b55427e8fa3185447e21cb225bc3ceb39ef54fc51ee4c9eba8ef1e6766de3",
+		"ownable/ownable.sol": {
+			"keccak256": "0xcebc7e39ccc2abd92cd7306d4d48a13bfa7272ee1f7dd40b00ec2aa9712f85f4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4916a09978f4b14eda9d0f60ac3b73df8b4b17c7a749bd542b20e8d27dd7b650",
-				"dweb:/ipfs/QmXyFoqped4Wa3DQz9GnNXvXdJhaGnSiF68x6ucXCdmPzj"
+				"bzz-raw://dbd0b8f1066c473deb5fe390bc92c5dfa6c685e4295e58d91512b84e7d46d353",
+				"dweb:/ipfs/QmbkfVDzmL1vEWuyBo2jZPHj5LApBTufyiCA6q6YgsdiMT"
 			]
 		}
 	},
