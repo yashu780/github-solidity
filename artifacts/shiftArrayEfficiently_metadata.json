@@ -8,12 +8,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "get",
+				"name": "num",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,28 +27,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_index",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
 					}
 				],
 				"name": "remove",
@@ -57,19 +38,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_i",
-						"type": "uint256"
-					}
-				],
-				"name": "set",
+				"inputs": [],
+				"name": "test",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -88,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"mapping.sol": "Mapping"
+			"array/arraywithoutshift.sol": "shiftArrayEfficiently"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -102,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"mapping.sol": {
-			"keccak256": "0xe811ac8a6dda97965a66129437d0914b1d84bac4397d20218081aa9be170a80c",
+		"array/arraywithoutshift.sol": {
+			"keccak256": "0x77b024c04067f30a98ee987bce2dbe120d21857cb415a58b902b6a04567960e1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://873c08aeecf6b0ca9dee287bdfc290f5220197d9f99dd902a43b9daf7abc0de6",
-				"dweb:/ipfs/Qmc6iCEZskw6yoRuWs9H9TDWWrUR1n75oRvqbxyt7im4gV"
+				"bzz-raw://fe63841c8d79174c20f0fdcdaabb10f8a7bd3d5662465646818da42e210347cb",
+				"dweb:/ipfs/Qmdrsg6cf8dmoUSxHJHWAdu3ahRp6NqiZ3MUMCdwPLQTXa"
 			]
 		}
 	},

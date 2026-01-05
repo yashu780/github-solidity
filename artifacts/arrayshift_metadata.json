@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.31+commit.fd3a2265"
+		"version": "0.8.10+commit.fc410830"
 	},
 	"language": "Solidity",
 	"output": {
@@ -8,12 +8,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "get",
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -25,30 +25,18 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"inputs": [],
+				"name": "example",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
 					}
 				],
 				"name": "remove",
@@ -57,21 +45,10 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_i",
-						"type": "uint256"
-					}
-				],
-				"name": "set",
+				"inputs": [],
+				"name": "test",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -88,9 +65,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"mapping.sol": "Mapping"
+			"array/arrayshift.sol": "arrayshift"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -102,12 +79,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"mapping.sol": {
-			"keccak256": "0xe811ac8a6dda97965a66129437d0914b1d84bac4397d20218081aa9be170a80c",
+		"array/arrayshift.sol": {
+			"keccak256": "0x875a5a2227bc4031c9f08d4540143308d6481c7fa09d19dd53293bd72f26ec16",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://873c08aeecf6b0ca9dee287bdfc290f5220197d9f99dd902a43b9daf7abc0de6",
-				"dweb:/ipfs/Qmc6iCEZskw6yoRuWs9H9TDWWrUR1n75oRvqbxyt7im4gV"
+				"bzz-raw://6ba8f01d65ef9f2ec179f5963917e1382f9f1cade6b6bb8707a8a0a4b55c833c",
+				"dweb:/ipfs/QmbELNmeu1CvzPY8R3JZQaj7sgfbVjHW6xJyNuvjJ8uTR5"
 			]
 		}
 	},
