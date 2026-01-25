@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.33+commit.64118f21"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"crowdfund/crowdfund.sol": "crowdfund"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"crowdfund/crowdfund.sol": {
+			"keccak256": "0x9163d1a4e1fcae0c52c18ea504cfc0957f10422d78330bb8fc90d67d6a3d23ed",
+			"urls": [
+				"bzz-raw://ded374ac957746b3390a801a9eab1a9fcde317ca2da53db460643f48f75e8e49",
+				"dweb:/ipfs/Qmdw1MQPfmjBf6oTLpeUrwMYLMdDj1BMGzkBYYDzQkhV2Z"
+			]
+		}
+	},
+	"version": 1
+}
