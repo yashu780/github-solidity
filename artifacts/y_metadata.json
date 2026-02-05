@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "foo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "loo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "zoo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"INHERIANCE/MULTIINHERITANCE.sol": "y"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"INHERIANCE/MULTIINHERITANCE.sol": {
+			"keccak256": "0xecf9f8b89a4c6e424c5e343d41ea36fbe12768d7aae8a142286bf40bd1b698d7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bce1691b0d15ae4adaef4b014ff08e409850c5ef8b94ca3337c9245259d74de0",
+				"dweb:/ipfs/QmWPFVuCgYBRmMPgWhAr4VZCJpMhqMaV6d7uWYoXS4rQdp"
+			]
+		}
+	},
+	"version": 1
+}
