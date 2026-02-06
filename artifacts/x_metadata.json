@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "foo",
+				"name": "name",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -15,12 +15,12 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "zoo",
+				"name": "text",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -28,7 +28,7 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"INHERIANCE/MULTIINHERITANCE.sol": "x"
+			"INHERIANCE/constructor.sol": "x"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -59,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"INHERIANCE/MULTIINHERITANCE.sol": {
-			"keccak256": "0xecf9f8b89a4c6e424c5e343d41ea36fbe12768d7aae8a142286bf40bd1b698d7",
+		"INHERIANCE/constructor.sol": {
+			"keccak256": "0x5b5fcdd9da05cd55bc4a3c3b794c12fedc076cb26a3159192c2ec3aac5689e6a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bce1691b0d15ae4adaef4b014ff08e409850c5ef8b94ca3337c9245259d74de0",
-				"dweb:/ipfs/QmWPFVuCgYBRmMPgWhAr4VZCJpMhqMaV6d7uWYoXS4rQdp"
+				"bzz-raw://d5a5826771ff06ee4ca7172f7b0191237efac227e9b5d14655ddb06c85967a14",
+				"dweb:/ipfs/QmdvboELyRyW9hXbkj6dcSYiPUAevDzLbM5Yp6M9th27nm"
 			]
 		}
 	},
