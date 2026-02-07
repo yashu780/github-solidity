@@ -6,45 +6,30 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
 						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_text",
+						"name": "message",
 						"type": "string"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"name": "log",
+				"type": "event"
 			},
 			{
 				"inputs": [],
-				"name": "name",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
+				"name": "bar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "text",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
+				"name": "foo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -61,7 +46,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"INHERIANCE/constructor.sol": "y"
+			"INHERIANCE/calling.sol": "y"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -75,12 +60,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"INHERIANCE/constructor.sol": {
-			"keccak256": "0x5b5fcdd9da05cd55bc4a3c3b794c12fedc076cb26a3159192c2ec3aac5689e6a",
+		"INHERIANCE/calling.sol": {
+			"keccak256": "0xd4c32255c81e50950f0cf90b8b9f94de25a589bd5418523df6d75fac513a0401",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d5a5826771ff06ee4ca7172f7b0191237efac227e9b5d14655ddb06c85967a14",
-				"dweb:/ipfs/QmdvboELyRyW9hXbkj6dcSYiPUAevDzLbM5Yp6M9th27nm"
+				"bzz-raw://4e09e7177d1d46d63ad21156ef9e445184d1a6cf64b26d6d0e94935d45c1dff5",
+				"dweb:/ipfs/QmXMNKF5U9RJL66dsNBwv4etdFKKVEYN81XnKgxQEYaPhU"
 			]
 		}
 	},

@@ -46,7 +46,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"INHERIANCE/calling.sol": "x"
+			"INHERIANCE/calling.sol": "a"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
