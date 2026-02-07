@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "gas",
+						"type": "uint256"
+					}
+				],
+				"name": "log",
+				"type": "event"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"sendeth/sendeth.sol": "ethReciever"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"sendeth/sendeth.sol": {
+			"keccak256": "0x5c050df6bc9b867d8178d93fba3fd761e73b3d2839580cae8efa2c7aadee7e27",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5ec35fe702ef3976f319e6320caf0eed82cb5795336b61253e21f50270430e90",
+				"dweb:/ipfs/QmNW3HjjkjjAmtHtUN498ovhqHWcZ9SfXtwM9RbYAttG2U"
+			]
+		}
+	},
+	"version": 1
+}
