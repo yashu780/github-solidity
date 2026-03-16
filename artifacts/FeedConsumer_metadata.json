@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "rate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"try and catch/trycatch.sol": "FeedConsumer"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"try and catch/trycatch.sol": {
+			"keccak256": "0x11831c9565e3cc2a61d5c49bfa95c892e6757b9ea12d72cf1246b114bc07a0d3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8cd9c2c1e919188e03165866fe14badcb7e41eadab8604c4602613f9510aca51",
+				"dweb:/ipfs/QmQD5MxJoHPEGrFeYi3z9PAy9Ba8QsdpQRzgt3HhW8JCDL"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"try and catch/trycatch.sol": "Vault"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"try and catch/trycatch.sol": {
+			"keccak256": "0xfa60509bb60af760d607b9c5ded4a67cc9f7b06134e75d1840757130a40a855b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://158dd841e2522d86216863accf0ffd19ff93ca1f86c56773c93d76849205360c",
+				"dweb:/ipfs/QmNQ51wwLQs8Sdi75NJXGmS9LnM6gZHVAF3QWm1fcttu4B"
+			]
+		}
+	},
+	"version": 1
+}
