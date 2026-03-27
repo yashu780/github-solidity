@@ -6,28 +6,26 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "birthdayboy",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "_favnum",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "changevalue",
+				"name": "addperson",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "date",
+				"name": "fnumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -39,12 +37,23 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "greetings",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listofpeople",
 				"outputs": [
 					{
+						"internalType": "uint256",
+						"name": "favnum",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
-						"name": "",
+						"name": "name",
 						"type": "string"
 					}
 				],
@@ -53,12 +62,17 @@
 			},
 			{
 				"inputs": [],
-				"name": "isyear",
+				"name": "pat",
 				"outputs": [
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "favnum",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -66,7 +80,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "localvariable",
+				"name": "retrieve",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -74,33 +88,20 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "num",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "year",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
+						"internalType": "uint256",
+						"name": "_fnumber",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -117,7 +118,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"practice.sol": "greet"
+			"check.sol": "favouriteno"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -131,12 +132,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"practice.sol": {
-			"keccak256": "0xaccfef0a715792bb6b24f9df86b544da9fae988a99e961597f2b95be208217d7",
-			"license": "MIT",
+		"check.sol": {
+			"keccak256": "0x203c02e80cecc3789d437b3207eba575c26dd6a0ed23f5304ae9af0a4d73e46d",
 			"urls": [
-				"bzz-raw://cbb17870a8a5847dcba542857052d4a90bf66f02fe845512d1d10097e8066b35",
-				"dweb:/ipfs/Qmbg5PvzRQi9uxT1oH9F6CpSg3MZokFVh8g7HEsd2RAFWF"
+				"bzz-raw://57c3713508e83d417bf759bc78b0abd5e210a516c5fc63048768c200ec9f411e",
+				"dweb:/ipfs/QmR1RjL4VdUCTC8XnWa3Mfoj3xsbk91LRwjzyhhHHb5hTU"
 			]
 		}
 	},

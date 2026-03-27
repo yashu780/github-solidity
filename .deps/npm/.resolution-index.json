@@ -1,0 +1,10 @@
+{
+  "twiter/basics.sol": {
+    "__sources__": {
+      "twiter/basics.sol": {
+        "content": "// SPDX-License-Identifier:MIT\r\npragma solidity ^0.8.10;\r\ncontract calculator {\r\nuint256 p\r\n}\r\n",
+        "file": "twiter/basics.sol"
+      }
+    }
+  }
+}

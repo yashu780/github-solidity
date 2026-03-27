@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"twiter/basics.sol": "c"
+			"twiter/basics.sol": "cal"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"twiter/basics.sol": {
-			"keccak256": "0x2a37b63ef7dfaaa080ff5f22c7b970c998e7e9a7108fda2c437ebcc84f7a7591",
+			"keccak256": "0x825efb75edf4320d372567adb6d16bb04e5b0d0061f78d90d4a61e34445400a8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://95815b4e1b734d673f74d8ddd390d5e1f80a557b8c28909c8f9a2544aeefcda2",
-				"dweb:/ipfs/QmUmu8vuAFq9SkXz5sdw5YzVrxP8hrDS9ccaDiji1UBdcv"
+				"bzz-raw://a28acc8441b36f78afc46a50a6e1dd54ed2d25a67f2ea24854d029367d63b48c",
+				"dweb:/ipfs/QmNmuBQjdxM4fsvrzbwcFXsMr6uo4XrALB57Miyuhmd5Hi"
 			]
 		}
 	},

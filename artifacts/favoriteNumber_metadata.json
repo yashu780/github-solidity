@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.35-pre.1+commit.a99b6d8c"
 	},
 	"language": "Solidity",
 	"output": {
@@ -72,7 +72,7 @@
 		"compilationTarget": {
 			"practise2.sol": "favoriteNumber"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
