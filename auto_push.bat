@@ -1,32 +1,28 @@
+@REM @echo off
+@REM cd /d "D:\solidity-github"
+
+@REM :: Configure git user (only needed once)
+@REM git config user.name "yashu780"
+@REM git config user.email "sharmayashu74@gmail.com"
+
+@REM :: Add and commit changes
+@REM git add .
+@REM git commit -m "Auto update from Remix" || echo "Nothing to commit"
+
+@REM :: Push to GitHub
+@REM git push https://github.com/yashu780/github-solidity.git main
+
+@REM :: Log the result
+@REM echo [%date% %time%] Auto push attempt completed >> D:\solidity-github\git_log.txt
+@REM pause
 @echo off
 cd /d "D:\solidity-github"
 
 git add .
 
 git -c user.name="yashu780" -c user.email="sharmayashu740@gmail.com" ^
-commit -m "Update Solidity practice files" || echo Nothing to commit
+commit -m "Update Solidity practice files" || exit /b 0
 
 git push origin main
 
 echo [%date% %time%] Auto push completed >> D:\solidity-github\git_log.txt
-
-pause
-```
-
----
-
-**Key changes:**
-1. Added `pause` at the end — window stays open so you can read output
-2. Changed `|| exit /b 0` to `|| echo Nothing to commit` — so you can see what happened instead of silently exiting
-
----
-
-**Run it manually first**
-
-Double click the bat file directly — don't use Task Scheduler yet. Read what the window shows and share it here.
-
-Most likely you'll see one of:
-```
-Everything up-to-date        ← already pushed, no new changes
-Nothing to commit            ← no changes made since last push
-error: authentication failed ← GitHub credentials issue
