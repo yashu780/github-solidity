@@ -4,7 +4,73 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "multiply",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "result",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "substract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +99,11 @@
 	},
 	"sources": {
 		"twiter/basics.sol": {
-			"keccak256": "0xb3cf7f21a67bebaa5779dd168290a1de0f1ff57d9f7f1bb24dfce0ffec345484",
+			"keccak256": "0xc6a72888dee68d18edc483af7f5403eda5ef5ded975be59d8adb9dd80420da6a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ab6b80536602591ab682fa5ec55868b8a93969b2b7119064a078a5256f9ebc1c",
-				"dweb:/ipfs/QmPjMNGCNSjfLL8b8G9CM2VmvdNqY7iLJFLHi9iq4GTyje"
+				"bzz-raw://b163e9b2fd1527e9383f8be91fb1a5faee43b2e02c7cc4c956641672340e8670",
+				"dweb:/ipfs/QmZuveZDmFAjBQzq8zBHJpN3qSJEkk9ZJ5b2r4y2r4C1Gy"
 			]
 		}
 	},

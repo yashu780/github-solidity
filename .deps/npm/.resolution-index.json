@@ -2,8 +2,32 @@
   "twiter/basics.sol": {
     "__sources__": {
       "twiter/basics.sol": {
-        "content": "// SPDX-License-Identifier:MIT\r\npragma solidity ^0.8.10;\r\ncontract calculator {\r\nuint256 p\r\n}\r\n",
+        "content": "// SPDX-License-Identifier:MIT\r\npragma solidity ^0.8.10;\r\n \r\n contract calculator {\r\n\r\n uint256 public result = 0;\r\n function add(uint256 num) public {\r\nresult += num;\r\n}\r\nfunction substract(uint256 num) public\r\n{\r\n    result -= num;\r\n}\r\nfunction multiply(uint256 num) public{\r\n    result *=num;\r\n}\r\nfunction get() public view returns(uint256){\r\n    return result;\r\n}\r\n\r\n}\r\n",
         "file": "twiter/basics.sol"
+      }
+    }
+  },
+  "ownable/ownable.sol": {
+    "__sources__": {
+      "ownable/ownable.sol": {
+        "content": "// SPDX-License-Identifier:MIT\r\n//only owner change new owner,2 function 1 called by owner 1 called by anyone, 1 modifier,1 constructor\r\npragma solidity ^0.8.8;\r\ncontract ownable{\r\n address public owner;\r\n constructor() {\r\n    owner=msg.sender;\r\n }\r\n modifier onlyOwner(){\r\n    require(msg.sender==owner,\"not owner\");\r\n    _;\r\n }\r\n function setowner(address _newowner)external onlyOwner{\r\n    require(_newowner !=address(0),\"invalid address\");\r\n    owner=_newowner;\r\n }\r\n function onlyOwnerCanCall() external onlyOwner{\r\n\r\n }\r\n function anyoneCanCall() external{\r\n    \r\n }\r\n}\r\n",
+        "file": "ownable/ownable.sol"
+      }
+    }
+  },
+  "helloworld.sol": {
+    "__sources__": {
+      "helloworld.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\n// compiler version must be greater than or equal to 0.8.26 and less than 0.9.0\r\npragma solidity ^0.8.26;\r\n\r\ncontract HelloWorld {\r\n    string public greet = \"Hello World!\";\r\n}\r\n",
+        "file": "helloworld.sol"
+      }
+    }
+  },
+  "add.sol": {
+    "__sources__": {
+      "add.sol": {
+        "content": "// SPDX-License-Identifier: UNLICENSED\r\npragma solidity ^0.8.0;\r\ncontract functionIntro{\r\n    function add(uint x, uint y) external pure returns(uint){\r\n        return x+y;\r\n    }\r\n}\r\n",
+        "file": "add.sol"
       }
     }
   }
