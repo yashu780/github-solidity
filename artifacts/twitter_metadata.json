@@ -6,28 +6,46 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "doSomething",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_tweet",
+						"type": "string"
+					}
+				],
+				"name": "createTweets",
 				"outputs": [],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "num",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "getTweet",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "text",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "tweets",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -52,7 +70,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"variable.sol": "Variables"
+			"twiter/basics.sol": "twitter"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -66,12 +84,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"variable.sol": {
-			"keccak256": "0x6bfa6527ded607ecfd56c9fe44a502432019b2092034031d37f7a13d6c1184fd",
+		"twiter/basics.sol": {
+			"keccak256": "0x09e27351a6ae6f97c778681a7802f1f0c4ea4fe1b4198ed3997a7d5a881bcfa4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9169496e3b56c59d86a95c2df57c406d29e719e025efadaa563ee95f80d225cc",
-				"dweb:/ipfs/QmZviuhytAHRtzctNEUMwmS9PSNYn6yE35K1SjgpHxdiLZ"
+				"bzz-raw://16528054c118b26a1c87b7cce1a76955dacc43a72a938f0466070f70b200483f",
+				"dweb:/ipfs/QmTKoivnCELxARA8rJhehdDKoQJRf6kdeVzpz7UXNY5Ez6"
 			]
 		}
 	},

@@ -1,12 +1,4 @@
 {
-  "twiter/basics.sol": {
-    "__sources__": {
-      "twiter/basics.sol": {
-        "content": "// SPDX-License-Identifier:MIT\r\npragma solidity ^0.8.10;\r\n \r\n contract calculator {\r\n\r\n uint256 public result = 0;\r\n function add(uint256 num) public {\r\nresult += num;\r\n}\r\nfunction substract(uint256 num) public\r\n{\r\n    result -= num;\r\n}\r\nfunction multiply(uint256 num) public{\r\n    result *=num;\r\n}\r\nfunction get() public view returns(uint256){\r\n    return result;\r\n}\r\n\r\n}\r\n",
-        "file": "twiter/basics.sol"
-      }
-    }
-  },
   "ownable/ownable.sol": {
     "__sources__": {
       "ownable/ownable.sol": {
@@ -28,6 +20,22 @@
       "add.sol": {
         "content": "// SPDX-License-Identifier: UNLICENSED\r\npragma solidity ^0.8.0;\r\ncontract functionIntro{\r\n    function add(uint x, uint y) external pure returns(uint){\r\n        return x+y;\r\n    }\r\n}\r\n",
         "file": "add.sol"
+      }
+    }
+  },
+  "variable.sol": {
+    "__sources__": {
+      "variable.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.26;\r\n\r\ncontract Variables {\r\n    // State variables are stored on the blockchain.\r\n    string public text = \"Hello\";\r\n    uint256 public num = 123;\r\n\r\n    function doSomething() public view {\r\n        // Local variables are not saved to the blockchain.\r\n        uint i = 456;\r\n\r\n        // Here are some global variables\r\n        uint256 timestamp = block.timestamp; // Current block timestamp\r\n        address sender = msg.sender; // address of the caller\r\n    }\r\n}\r\n",
+        "file": "variable.sol"
+      }
+    }
+  },
+  "twiter/basics.sol": {
+    "__sources__": {
+      "twiter/basics.sol": {
+        "content": "// SPDX-License-Identifier:MIT\r\npragma solidity ^0.8.10;\r\n contract twitter{\r\n    mapping(address => string) public tweets;\r\n    function createTweets(string memory _tweet) public{\r\n        tweets[msg.sender] = _tweet;\r\n    }\r\n    function getTweet(address _addr)public view returns(string memory ){\r\n        return tweets[_addr];\r\n    }\r\n }",
+        "file": "twiter/basics.sol"
       }
     }
   }
