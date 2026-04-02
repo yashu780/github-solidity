@@ -12,6 +12,9 @@ pragma solidity ^0.8.10;
     }
     mapping(address => Tweet[]) public tweets;
     address public owner;
+    event TweetCreated(uint256, address author, string content, uint256 timestamp);
+    event Tweetliked(address liker,address tweetAuthor, uint256 tweetId, uint256 newLikeCount);
+    event Tweetdisliked(address disliker,address tweetAuthor, uint256 tweetId, uint256 newDislikeCount);
     constructor(){
         owner = msg.sender;
 
@@ -34,16 +37,19 @@ pragma solidity ^0.8.10;
         dislike:0
        });
         tweets[msg.sender].push(newTweet);
+        emit TweetCreated(newTweet.id, newTweet.author,newTweet.content, newTweet.timestamp);
     }
     function likeTweet(address author,uint256 id) external{
         require(tweets[author][id].id ==id,"Tweet does not exist");
         tweets[author][id].likes++;
+        emit Tweetliked(msg.sender, author,id, tweets[author][id].likes);
 
     }
     function dislikeTweet(address author,uint256 id) external {
         require(tweets[author][id].id ==id,"Tweet does not exist");
         require(tweets[author][id].likes>0,"Tweet has no likes");
-        tweets[author][id].likes--;
+        tweets[author][id].dislike++;
+        emit Tweetdisliked(msg.sender, author,id , tweets[author][id].dislike);
     }
 
     function getTweet(uint256 _i)public view returns(Tweet memory ){
