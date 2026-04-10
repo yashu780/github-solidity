@@ -4,7 +4,7 @@ pragma solidity ^0.8.10;
 contract SimpleStorage {
     uint256 private value;
     address public owner;
-
+    uint256 private myFavoriteNumber;
     constructor() {
         owner = msg.sender;
     }
@@ -20,6 +20,13 @@ contract SimpleStorage {
 
     function getValue() public view returns (uint256) {
         return value;
+    }
+    function store(uint256 _number) public {  // must be public
+        myFavoriteNumber = _number;
+    }
+
+    function retrieve() public view returns (uint256) {  // must be public
+        return myFavoriteNumber;
     }
 }
 contract SimpleStorage2{}
